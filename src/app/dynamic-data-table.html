@@ -1,0 +1,16 @@
+<input [(ngModel)]="rowName">
+<button (click)="addRow()">Add Student</button>
+<input [(ngModel)]="columnName">
+<button (click)="addColumn()">Add Subject</button>
+<table #tableContainer cdk-table [dataSource]="dataSource">
+
+    <ng-container *ngFor="let disCol of displayedColumns; let colIndex = index" cdkColumnDef="{{disCol}}">
+      <th cdk-header-cell *cdkHeaderCellDef>{{disCol}} </th>
+      <td cdk-cell *cdkCellDef="let element"> 
+        <span *ngIf="colIndex === 0">{{element[disCol]}}</span>
+        <span *ngIf="colIndex > 0"> <input [(ngModel)]="element[disCol]"></span></td>
+    </ng-container>
+
+  <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
+  <tr cdk-row *cdkRowDef="let row; columns: displayedColumns;"></tr>
+</table>
