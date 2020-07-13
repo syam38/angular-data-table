@@ -3,7 +3,6 @@ table {
 }
 
 th {
-  text-align: left;
 }
 
 .table-container {
@@ -15,10 +14,13 @@ th:first-child {
   position: sticky;
   left: 0px;
   background-color: grey;
+  text-align: center;
 }
 
 td:first-child {
   position: sticky;
   left: 0px;
   background-color: grey;
+  text-align: center;
+
 }
