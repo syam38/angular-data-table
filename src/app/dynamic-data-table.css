@@ -34,7 +34,7 @@ th {
 
 table input {
   border:0;outline:0;
-  width: 10px;
+  width: 20px;
   background-color: #fafafa;
 }
 input:focus {outline:none!important;}

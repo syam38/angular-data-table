@@ -11,7 +11,7 @@ let ELEMENT_DATA: any[] = [
   templateUrl: 'dynamic-data-table.html',
 })
 export class DynamicDataTable  implements OnInit{
-  displayedColumns: string[] = ['Student', 'Social', 'Science', 'Maths'];
+  displayedColumns: string[] = ['Student', 'Social', 'Science', 'Maths', 'English', 'Physics'];
   dataSource = new ExampleDataSource();
   columnName='';
   rowName = '';
