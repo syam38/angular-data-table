@@ -11,14 +11,14 @@ td {
 
 th:first-child {
   position: sticky;
-  left: 0px;
+  left: 2px;
   background-color: grey;
   text-align: center;
 }
 
 td:first-child {
   position: sticky;
-  left: 0px;
+  left: 2px;
   background-color: grey;
   text-align: center;
 
