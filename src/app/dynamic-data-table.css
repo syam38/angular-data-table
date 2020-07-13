@@ -5,3 +5,20 @@ table {
 th {
   text-align: left;
 }
+
+.table-container {
+  width: 400px;
+  overflow-x:auto;
+}
+
+th:first-child {
+  position: sticky;
+  left: 0px;
+  background-color: grey;
+}
+
+td:first-child {
+  position: sticky;
+  left: 0px;
+  background-color: grey;
+}

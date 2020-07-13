@@ -2,6 +2,7 @@
 <button (click)="addRow()">Add Student</button>
 <input [(ngModel)]="columnName">
 <button (click)="addColumn()">Add Subject</button>
+<div class="table-container">
 <table #tableContainer cdk-table [dataSource]="dataSource">
 
     <ng-container *ngFor="let disCol of displayedColumns; let colIndex = index" cdkColumnDef="{{disCol}}">
@@ -14,3 +15,4 @@
   <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
   <tr cdk-row *cdkRowDef="let row; columns: displayedColumns;"></tr>
 </table>
+</div>
