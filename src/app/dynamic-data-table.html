@@ -9,7 +9,7 @@
       <th cdk-header-cell *cdkHeaderCellDef>{{disCol}} </th>
       <td cdk-cell *cdkCellDef="let element"> 
         <span *ngIf="colIndex === 0">{{element[disCol]}}</span>
-        <span *ngIf="colIndex > 0"> <input [(ngModel)]="element[disCol]"></span></td>
+        <span *ngIf="colIndex > 0"> <input [(ngModel)]="element[disCol]" placeHolder="--"></span></td>
     </ng-container>
 
   <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
